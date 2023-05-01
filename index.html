@@ -35,11 +35,40 @@
             align-items: center;
         }
 
-        .welcome, footer {
+        .welcome,
+        footer {
             padding: .75em;
             text-align: center;
         }
 
+        /* Links at the end */
+
+        ul li>a {
+            color: inherit;
+            text-decoration: none;
+            transition: 0.25s ease;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin-top: 1.75em
+        }
+
+        ul li {
+            margin: 0 1em
+        }
+
+        ul:hover a {
+            color: indianred;
+        }
+
+        ul:hover a:hover {
+            color: #ffcc09;
+            box-shadow: 0 2px 0 0 currentcolor;
+        }
     </style>
 </head>
 
@@ -51,6 +80,13 @@
 
         <footer>
             <div class="end">With &hearts;, <br />Kaushalya R. Mandaliya</div>
+            <div class="links">
+                <ul>
+                    <li><a href="https://twitter.com/kmandalwala">Twitter</a></li>
+                    <li><a href="https://github.com/krman009">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/kaushalyarm/">LinkedIn</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
 </body>
